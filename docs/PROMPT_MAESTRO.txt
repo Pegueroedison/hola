@@ -1,0 +1,372 @@
+Actúa como Arquitecto de Software Senior, CTO, Diseñador UX/UI Senior, Experto en ERP, POS, Inventario, Compras, Ventas, Contabilidad, Nómina, RRHH, Supabase, PostgreSQL, Cloudflare R2, Tauri, SQLite, PWA, Offline First y Sistemas Empresariales Escalables.
+
+OBJETIVO:
+Crear una plataforma ERP empresarial moderna, profesional, multiempresa, multisucursal, offline-first, altamente configurable y lista para producción.
+
+MODULOS OBLIGATORIOS:
+- Multiempresa.
+- Multisucursal.
+- POS.
+- Inventario.
+- Compras.
+- Ventas.
+- Clientes.
+- Proveedores.
+- Cuentas por cobrar.
+- Cuentas por pagar.
+- Contabilidad.
+- Nómina.
+- Recursos Humanos.
+- Caja.
+- Reportes.
+- Auditoría.
+- Configuración.
+- Etiquetas.
+- Tickets.
+- Autorizaciones.
+- Permisos granulares.
+
+PLATAFORMAS:
+- Web.
+- PWA instalable.
+- Desktop Windows mediante Tauri.
+- Responsive para móvil, tablet y PC.
+
+OFFLINE FIRST:
+- IndexedDB para Web/PWA.
+- SQLite para Desktop.
+- Sincronización automática con Supabase.
+- Cola de operaciones.
+- Manejo de conflictos.
+- Prevención de duplicados.
+- El negocio nunca debe detenerse por falta de internet.
+
+TECNOLOGÍAS:
+Frontend:
+- React.
+- Vite.
+- TypeScript.
+- Tailwind CSS.
+- shadcn/ui.
+- Zustand.
+- TanStack Query.
+- TanStack Table.
+- React Hook Form.
+- Zod.
+- Recharts.
+- Framer Motion.
+
+Backend:
+- Supabase.
+- PostgreSQL.
+- Auth.
+- RLS.
+- Realtime.
+- Edge Functions.
+- Triggers SQL.
+- RPC Functions.
+
+ARCHIVOS:
+- Cloudflare R2 para imágenes y documentos.
+- Supabase solo para metadata.
+
+DESIGN SYSTEM OBLIGATORIO:
+Todos los botones, formularios, tablas, modales y componentes deben salir de una biblioteca centralizada.
+No se permite crear componentes aislados por módulo.
+Cambiar un botón debe afectar todo el sistema.
+
+INTERFAZ ADMINISTRABLE:
+Todo debe poder configurarse desde el panel administrativo:
+- Logos.
+- Temas.
+- Colores.
+- Menús.
+- Orden de módulos.
+- Campos visibles.
+- Plantillas.
+- Etiquetas.
+- Tickets.
+- Facturas.
+- Dashboard.
+
+MODO OSCURO GLOBAL:
+Debe funcionar en todos los módulos sin excepciones.
+
+MULTIEMPRESA:
+Cada empresa debe tener:
+- Configuración propia.
+- Impuestos propios.
+- Usuarios propios.
+- Inventario propio.
+- Contabilidad propia.
+- Plantillas propias.
+- Tema propio.
+
+MULTISUCURSAL:
+Cada empresa puede tener:
+- Varias sucursales.
+- Varias cajas.
+- Varios almacenes.
+- Varias impresoras.
+
+ROLES:
+- Owner.
+- Administrador.
+- Gerente.
+- Supervisor.
+- Cajero.
+- Vendedor.
+- Compras.
+- Inventario.
+- Contabilidad.
+- RRHH.
+- Auditor.
+- Solo lectura.
+
+PERMISOS GRANULARES:
+Por:
+- Empresa.
+- Sucursal.
+- Almacén.
+- Caja.
+- Usuario.
+- Rol.
+- Módulo.
+- Acción.
+
+Los usuarios solo deben ver lo que tienen permitido.
+Si no tienen permiso, el módulo o botón no debe aparecer.
+
+AUTORIZACIONES:
+Permitir autorización por supervisor o administrador para:
+- Venta sin existencia.
+- Venta de productos vencidos.
+- Descuentos especiales.
+- Cambio manual de precios.
+- Reimpresión.
+- Anulaciones.
+- Superar límite de crédito.
+- Cierre de caja con diferencia.
+
+POS:
+- Código de barras.
+- QR.
+- Búsqueda rápida.
+- Clientes.
+- Cotizaciones.
+- Pedidos.
+- Facturas.
+- Tickets.
+- Devoluciones.
+- Pagos mixtos.
+- Crédito.
+- Descuentos.
+
+INVENTARIO:
+- Productos.
+- Servicios.
+- Categorías.
+- Marcas.
+- Variantes.
+- Tallas.
+- Colores.
+- SKU.
+- Código de barras.
+- QR.
+- Lotes.
+- Series.
+- Vencimientos.
+- Kardex.
+- Ajustes.
+- Transferencias.
+
+FARMACIAS:
+- Lotes.
+- Vencimientos.
+- Principio activo.
+- Laboratorio.
+- Concentración.
+- Alertas.
+- Bloqueo de venta.
+- Venta autorizada.
+
+COMPRAS:
+- Órdenes de compra.
+- Recepciones.
+- Compras a crédito.
+- Compras al contado.
+- Devoluciones.
+
+CLIENTES:
+- Historial.
+- Créditos.
+- Descuentos.
+- Estado de cuenta.
+
+PROVEEDORES:
+- Historial.
+- Compras.
+- Pagos.
+- Estado de cuenta.
+
+CUENTAS POR COBRAR:
+- Facturas pendientes.
+- Cobros.
+- Abonos.
+- Antigüedad de saldos.
+
+CUENTAS POR PAGAR:
+- Facturas pendientes.
+- Pagos.
+- Vencimientos.
+
+CONTABILIDAD:
+- Catálogo de cuentas.
+- Diario.
+- Mayor.
+- Balance General.
+- Estado de Resultados.
+- Flujo de Efectivo.
+- Asientos automáticos.
+- Asientos manuales.
+
+NÓMINA:
+- Empleados.
+- Departamentos.
+- Cargos.
+- Horas extras.
+- Comisiones.
+- Bonificaciones.
+- Deducciones.
+- Vacaciones.
+- Licencias.
+- Préstamos.
+- Recibos.
+
+RRHH:
+- Expedientes.
+- Contratos.
+- Documentos.
+- Evaluaciones.
+- Historial laboral.
+
+CAJA:
+- Apertura.
+- Cierre.
+- Entradas.
+- Salidas.
+- Gastos.
+- Diferencias.
+
+ETIQUETAS:
+Impresión configurable.
+Campos:
+- Nombre.
+- Precio.
+- Código de barras.
+- QR.
+- SKU.
+- Lote.
+- Fecha de vencimiento.
+
+TICKETS:
+- 58mm.
+- 80mm.
+- Facturas.
+- Reimpresión.
+
+MOTOR DE FLUJOS OPERATIVOS:
+Debe permitir crear áreas de trabajo configurables.
+Ejemplos:
+- Cocina.
+- Barra.
+- Laboratorio.
+- Producción.
+- Empaque.
+- Despacho.
+- Taller.
+- Recepción.
+
+Cada empresa debe poder crear sus propias áreas y rutas de trabajo.
+Las órdenes deben enviarse automáticamente al área correspondiente.
+
+EDITOR PROFESIONAL DE IMÁGENES:
+- Recorte.
+- Zoom.
+- Rotación.
+- Reencuadre.
+- Relación de aspecto.
+- Vista previa exacta.
+- Compresión.
+- Optimización.
+- WebP.
+La imagen final debe ser exactamente igual a la vista previa.
+
+REPORTES:
+- Ventas.
+- Compras.
+- Inventario.
+- Caja.
+- Clientes.
+- Proveedores.
+- Nómina.
+- Contabilidad.
+- Auditoría.
+Exportación PDF, Excel y CSV.
+
+AUDITORÍA TOTAL:
+Registrar:
+- Usuario.
+- Rol.
+- Fecha.
+- Hora.
+- Empresa.
+- Sucursal.
+- Acción.
+- Antes.
+- Después.
+- Motivo.
+- Usuario autorizador.
+
+GITHUB READY:
+Todas las entregas deben incluir:
+- Proyecto completo.
+- Código completo.
+- Archivos completos.
+- Migraciones SQL.
+- Políticas RLS.
+- Edge Functions.
+- README.
+- .gitignore.
+- Configuración de producción.
+- Configuración de desarrollo.
+
+NO QUIERO:
+- Fragmentos de código.
+- Parches incompletos.
+- Archivos parciales.
+- Ejemplos aislados.
+
+QUIERO:
+- ZIP completo.
+- Proyecto completo.
+- Listo para subir a GitHub.
+- Listo para ejecutar.
+- Arquitectura limpia.
+- Sin código duplicado.
+- Sin componentes duplicados.
+- Sin lógica repetida.
+
+OBJETIVO FINAL:
+Crear un ERP empresarial comparable a soluciones comerciales modernas, escalable, multiempresa, multisucursal, offline-first, con POS, inventario, compras, ventas, contabilidad, nómina, RRHH, auditoría, permisos granulares, autorizaciones, tickets, etiquetas, Cloudflare R2, Supabase y panel administrativo completo.
+
+
+REQUISITO DE PUBLICACIÓN UNIVERSAL Y ALTO RENDIMIENTO:
+- La entrega final debe ser una versión compilada, optimizada y lista para producción.
+- Debe poder publicarse sin pantalla blanca en GitHub Pages, Netlify, Vercel, hosting tradicional, dominio propio y subcarpetas.
+- La versión publicada debe usar rutas relativas y no depender de una ruta fija del repositorio.
+- El usuario debe poder subir los archivos compilados directamente al hosting y ver la interfaz sin ejecutar comandos.
+- El código fuente completo debe incluirse aparte para futuras modificaciones, pero la raíz de la entrega debe contener la app compilada lista para publicar.
+- La interfaz debe funcionar correctamente en móvil, tablet, PC, PWA instalable y Desktop Windows mediante Tauri.
+- La app no debe quedarse en blanco si Supabase, R2 u otras variables todavía no están configuradas; debe mostrar la interfaz y avisos de configuración pendientes.
+- La compilación debe priorizar velocidad, carga rápida, assets optimizados, división razonable de código y compatibilidad de despliegue.

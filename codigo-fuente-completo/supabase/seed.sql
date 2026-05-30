@@ -1,0 +1,2 @@
+-- Datos demo opcionales. Ejecutar solo en desarrollo.
+-- Crea una empresa demo manualmente después de tener un usuario auth.users.

@@ -1,0 +1,4 @@
+project_id = "sistema-venta-erp-pos"
+
+[functions.r2-signed-upload]
+verify_jwt = true
